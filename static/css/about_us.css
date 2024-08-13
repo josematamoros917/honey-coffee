@@ -1,0 +1,151 @@
+/* Asegúrate de que el slider ocupe todo el ancho del contenedor */
+.carousel-item {
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.carousel-item h2 {
+    font-size: 2rem; /* Ajusta el tamaño del título */
+    margin-bottom: 1rem;
+}
+
+.carousel-item p {
+    font-size: 1.25rem; /* Ajusta el tamaño del texto */
+    line-height: 1.5;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-color); /* Ajusta el color de los controles */
+}
+
+/* Estilos generales para todos los dispositivos */
+
+/* Media query para móviles pequeños */
+@media only screen and (max-width: 480px) {
+    .carousel-item {
+        width: 100%; /* Asegura que el carrusel ocupe todo el ancho de la pantalla */
+        margin-top: 3rem;
+        padding: 0 20px; /* Disminuye el padding lateral para aprovechar más el espacio */
+    }
+
+    .carousel-item h2 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título para pantallas pequeñas */
+    }
+
+    .carousel-item p {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+
+    .carousel-item ul {
+        padding-left: 15px; /* Ajusta el padding de la lista */
+    }
+
+    /* Ajustar el tamaño de los íconos de control si es necesario */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Media query para móviles grandes */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para móviles grandes */
+    .carousel-item {
+        width: 100%; /* Asegura que el carrusel ocupe todo el ancho de la pantalla */
+        margin-top: 3rem;
+        padding: 0 20px; /* Disminuye el padding lateral para aprovechar más el espacio */
+    }
+
+    .carousel-item h2 {
+        font-size: 1.5rem; /* Ajusta el tamaño del título para pantallas pequeñas */
+    }
+
+    .carousel-item p {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto */
+    }
+
+    .carousel-item ul {
+        padding-left: 15px; /* Ajusta el padding de la lista */
+    }
+
+    /* Ajustar el tamaño de los íconos de control si es necesario */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Media query para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+    /* Estilos específicos para móviles grandes */
+    .carousel-item {
+        width: 100%; /* Aseura que el carrusel ocupe todo el ancho de la pantalla */
+        margin-top: 5rem;
+        padding: 0 20px; /* Disminuye el padding lateral para aprovechar más el espacio */
+    }
+
+    .carousel-item h2 {
+        font-size: 3rem; /* Ajusta el tamaño del título para pantallas pequeñas */
+    }
+
+    .carousel-item p {
+        font-size: 2rem; /* Ajusta el tamaño del texto */
+    }
+
+    .carousel-item ul {
+        padding-left: 15px; /* Ajusta el padding de la lista */
+    }
+
+    /* Ajustar el tamaño de los íconos de control si es necesario */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Media query para computadoras portátiles y de escritorio */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos específicos para portátiles y escritorio */
+}
+
+/* Media query para pantallas grandes de escritorio */
+@media only screen and (min-width: 1441px) {
+    /* Estilos específicos para pantallas grandes de escritorio */
+    /* Aquí puedes aumentar el tamaño de las fuentes, espaciado, etc. */
+}
+
+/* Media query para pantallas ultragrandes o de desarrollo (opcional) */
+@media only screen and (min-width: 1920px) {
+    /* Estilos específicos para pantallas ultragrandes o de desarrollo */
+    /* Ejemplo: aumentar aún más el tamaño del contenido */
+    .carousel-item {
+        width: 100%; /* Aseura que el carrusel ocupe todo el ancho de la pantalla */
+        margin-top: 5rem;
+        padding: 0 20px; /* Disminuye el padding lateral para aprovechar más el espacio */
+    }
+
+    .carousel-item h2 {
+        font-size: 4rem; /* Ajusta el tamaño del título para pantallas pequeñas */
+    }
+
+    .carousel-item p {
+        font-size: 3rem; /* Ajusta el tamaño del texto */
+    }
+
+    .carousel-item ul {
+        padding-left: 15px; /* Ajusta el padding de la lista */
+    }
+
+    /* Ajustar el tamaño de los íconos de control si es necesario */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 28px;
+        height: 28px;
+    }
+}

@@ -1,0 +1,209 @@
+/* Importa los colores definidos en colors.css */
+@import url('colors.css');
+
+/* Styles for the floating menu button */
+.menu-button {
+    position: fixed;
+    bottom: 2rem; /* Distance from the bottom */
+    right: 2rem; /* Distance from the right */
+    z-index: 1050; /* Ensure it's above other content */
+    border: 0.2rem solid; /* Border width */
+    border-color: var(--primary-color);
+    background: transparent; /* Transparent background */
+    border-radius: 50%; /* Make button round */
+    padding: 0; /* Remove default padding */
+    cursor: pointer; /* Show a pointer cursor on hover */
+}
+
+.menu-button img {
+    width: 80px; /* Size of the logo */
+    height: 80px;
+}
+
+/* Estilos para el modal */
+.modal-content {
+    background-color: var(--background-color); /* Fondo del modal */
+    color: var(--text-color); /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra alrededor del modal */
+    border: 1px solid var(--primary-color); /* Borde con el color primario */
+}
+
+/* Estilos para el encabezado del modal */
+.modal-header {
+    border-bottom: 1px solid var(--primary-color); /* Borde inferior del encabezado */
+}
+
+/* Estilos para el botón de cierre del modal */
+.modal-header .close {
+    color: var(--primary-color); /* Color del botón de cierre */
+    font-size: 1.5rem; /* Tamaño del botón */
+    opacity: 1; /* No transparencia */
+}
+
+/* Efectos en hover del botón de cierre */
+.modal-header .close:hover {
+    color: var(--secondary-color); /* Cambia de color al pasar el ratón */
+}
+
+/* Estilos para el título del modal */
+.modal-title {
+    color: var(--primary-color); /* Color del título */
+    font-size: 1.8rem; /* Tamaño de la fuente */
+}
+
+/* Estilos para el cuerpo del modal */
+.modal-body {
+    color: var(--text-color); /* Color del texto */
+    font-size: 1rem; /* Tamaño del texto */
+}
+
+/* Estilos para los enlaces dentro del modal */
+.modal-body a {
+    color: var(--link-color); /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover en los enlaces */
+.modal-body a:hover {
+    color: var(--link-hover-color); /* Color al pasar el ratón */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Estilos para el pie del modal */
+.modal-footer {
+    border-top: 1px solid var(--primary-color); /* Borde superior del pie */
+    display: flex;
+    justify-content: flex-end; /* Alinear los botones a la derecha */
+}
+
+/* Estilos para los botones dentro del modal */
+.modal-footer .btn {
+    background-color: var(--primary-color); /* Fondo del botón */
+    color: var(--text-color); /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover en los botones */
+.modal-footer .btn:hover {
+    background-color: var(--secondary-color); /* Cambio de color en hover */
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+}
+/* Aplica el color de fondo personalizado al listado de opciones */
+.list-group {
+    background-color: var(--background-color); /* Color de fondo del contenedor */
+    border-radius: 5px; /* Opcional: Bordes redondeados */
+    padding: 10px; /* Opcional: Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: Sombra */
+}
+
+/* Estilos para los elementos individuales del listado */
+.list-group-item {
+    background-color: transparent; /* Fondo transparente para heredar el del contenedor */
+    border: none; /* Elimina los bordes predeterminados */
+    color: var(--text-color); /* Color del texto */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover para los elementos del listado */
+.list-group-item:hover {
+    background-color: var(--secondary-color); /* Fondo al pasar el ratón */
+    color: var(--background-color); /* Color del texto al pasar el ratón */
+    cursor: pointer; /* Muestra el cursor de puntero al pasar el ratón */
+}
+
+/* Estilos generales para todos los dispositivos */
+
+/* Media query para móviles pequeños */
+@media only screen and (max-width: 480px) {
+    /* Estilos específicos para móviles pequeños */
+    .menu-button img {
+        width: 50px; /* Size of the logo */
+        height: 50px;
+    }
+}
+
+/* Media query para móviles grandes */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para móviles grandes */
+}
+
+/* Media query para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+}
+
+/* Media query para computadoras portátiles y de escritorio */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos específicos para portátiles y escritorio */
+    /* Ajusta el tamaño del modal */
+    .modal-dialog {
+        max-width: 70%; /* Ajusta el ancho máximo del modal */
+        
+        margin: 1.75rem auto; /* Ajusta el margen para centrar el modal verticalmente */
+    }
+
+    .modal-content {
+        border-radius: 15px; /* Aumenta el radio de los bordes para un aspecto más estilizado */
+        padding: 30px; /* Aumenta el padding interno del modal */
+    }
+
+    .modal-header {
+        border-bottom: 1px solid var(--primary-color); /* Asegúrate de que el borde siga el diseño */
+    }
+
+    .modal-title {
+        font-size: 2rem; /* Aumenta el tamaño del título */
+    }
+
+    .modal-body {
+        font-size: 1.125rem; /* Ajusta el tamaño del texto del contenido */
+    }
+
+    .modal-footer .btn {
+        padding: 12px 24px; /* Ajusta el padding interno de los botones */
+    }
+}
+
+/* Media query para pantallas grandes de escritorio */
+@media only screen and (min-width: 1441px) {
+    /* Estilos específicos para pantallas grandes de escritorio */
+    /* Aquí puedes aumentar el tamaño de las fuentes, espaciado, etc. */
+}
+
+/* Media query para pantallas ultragrandes o de desarrollo (opcional) */
+@media only screen and (min-width: 1920px) {
+    /* Estilos específicos para pantallas ultragrandes o de desarrollo */
+    .modal-dialog {
+        max-width: 70%; /* Ajusta el ancho máximo del modal */
+        
+        margin: 1.75rem auto; /* Ajusta el margen para centrar el modal verticalmente */
+    }
+
+    .modal-content {
+        border-radius: 15px; /* Aumenta el radio de los bordes para un aspecto más estilizado */
+        padding: 30px; /* Aumenta el padding interno del modal */
+    }
+
+    .modal-header {
+        border-bottom: 1px solid var(--primary-color); /* Asegúrate de que el borde siga el diseño */
+    }
+
+    .modal-title {
+        font-size: 2rem; /* Aumenta el tamaño del título */
+    }
+
+    .modal-body {
+        font-size: 1.125rem; /* Ajusta el tamaño del texto del contenido */
+    }
+
+    .modal-footer .btn {
+        padding: 12px 24px; /* Ajusta el padding interno de los botones */
+    }
+}
+

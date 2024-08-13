@@ -1,0 +1,63 @@
+/* Importa los colores definidos en colors.css */
+@import url('colors.css');
+/* navbar.css */
+.navbar-custom {
+    background-color: var(--background-color); /* Usamos la variable de color de fondo que mencionas */
+    position: fixed; /* Fijamos el navbar en la parte superior de la página */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Aseguramos que el navbar esté por encima de otros elementos */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--background-color); /* Color de los links en el navbar */
+    padding: 10px 20px; /* Espaciado para los links */
+}
+
+.navbar-custom .navbar-brand {
+    color: var(--primary-color); /* Color de la marca (nombre o logo) */
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: var(--light-background-color); /* Color del borde del botón de despliegue en pantallas pequeñas */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,..."); /* Ajusta el color del ícono del toggler (burger icon) */
+}
+
+/* Estilos generales para todos los dispositivos */
+
+/* Media query para móviles pequeños */
+@media only screen and (max-width: 480px) {
+    /* Estilos específicos para móviles pequeños */
+}
+
+/* Media query para móviles grandes */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para móviles grandes */
+}
+
+/* Media query para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+}
+
+/* Media query para computadoras portátiles y de escritorio */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos específicos para portátiles y escritorio */
+}
+
+/* Media query para pantallas grandes de escritorio */
+@media only screen and (min-width: 1441px) {
+    /* Estilos específicos para pantallas grandes de escritorio */
+    /* Aquí puedes aumentar el tamaño de las fuentes, espaciado, etc. */
+}
+
+/* Media query para pantallas ultragrandes o de desarrollo (opcional) */
+@media only screen and (min-width: 1920px) {
+    /* Estilos específicos para pantallas ultragrandes o de desarrollo */
+    /* Ejemplo: aumentar aún más el tamaño del contenido */
+}
+
+

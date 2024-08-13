@@ -1,0 +1,52 @@
+{% extends 'core/base_menu.html' %}
+
+{% block content %}
+<h1 class="text-center mt-4 pt-4">Sobre Nosotros</h1>
+
+    <!-- Slider de contenido -->
+    <div id="aboutUsSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Visión -->
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h2>Visión</h2>
+                        <p>En Honey Coffee, nuestra visión es ser la cafetería líder en innovación y sostenibilidad, ofreciendo una experiencia única y auténtica que deleite a nuestros clientes y respete nuestro entorno. Queremos que cada taza de café cuente una historia de calidad y compromiso con el medio ambiente.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Misión -->
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h2>Misión</h2>
+                        <p>Nuestra misión en Honey Coffee es proporcionar un café de la más alta calidad, con un enfoque en la sostenibilidad y la equidad. Buscamos crear un espacio acogedor donde nuestros clientes puedan disfrutar de una experiencia excepcional, mientras apoyamos a los productores de café y a nuestras comunidades locales.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Valores -->
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h2>Valores</h2>
+                        <ul class="list-unstyled">
+                            <li><p><strong>Calidad:</strong> Comprometidos con la excelencia en cada taza de café.</p></li>
+                            <li><p><strong>Sostenibilidad:</strong> Respetamos el medio ambiente en todas nuestras prácticas.</p></li>
+                            <li><p><strong>Comunidad:</strong> Apoyamos a los productores de café y a nuestras comunidades locales.</p></li>
+                            <li><p><strong>Innovación:</strong> Siempre buscando nuevas formas de mejorar la experiencia del café.</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controles del slider -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#aboutUsSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#aboutUsSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+{% endblock %}

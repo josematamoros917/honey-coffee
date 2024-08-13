@@ -1,0 +1,174 @@
+/* Importa los colores definidos en colors.css */
+@import url('colors.css');
+/* Resetting margins and paddings, setting border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Gupter", serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el body ocupe al menos la altura del viewport */
+    overflow: auto; /* Evita el desplazamiento si el contenido no cabe */
+    padding-top: 60px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px; /* Ajusta según sea necesario */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0; /* Ajusta el padding si es necesario */
+    box-sizing: border-box;
+    min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura del viewport */
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.main-content {
+    margin: 0;
+    padding: 0; /* Ajusta el padding según sea necesario */
+    width: 100%;
+}
+/* Keyframes for alternating rotation with pauses */
+@keyframes rotateForward {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg); /* Rotate 180 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* Complete the rotation */
+    }
+}
+
+@keyframes rotateBackward {
+    0% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(180deg); /* Rotate -180 degrees */
+    }
+    100% {
+        transform: rotate(0deg); /* Complete the rotation */
+    }
+}
+
+/* Contenedor para la imagen de fondo */
+.background-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    z-index: -1; /* Asegúrate de que esté detrás del contenido */
+}
+
+/* Imagen de fondo dentro del contenedor */
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background-coffee.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center center; /* Mantén la posición de la imagen centrada */
+    background-repeat: no-repeat;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Gupter", serif;
+    font-weight: 700; /* Bold por defecto para encabezados */
+}
+  
+p {
+    font-family: "Gupter", serif;
+    font-weight: 500; /* Medium para párrafos */
+}
+
+/* Estilos generales para todos los dispositivos */
+
+/* Media query para móviles pequeños */
+@media only screen and (max-width: 480px) {
+    .background-wrapper {
+        top: 10%; /* Ajusta la posición del contenedor hacia abajo */
+    }
+    .background-image {
+        background-size: 90%; /* Aumenta el tamaño de la imagen en móviles pequeños */
+    }
+}
+
+/* Media query para móviles grandes */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para móviles grandes */
+    .background-wrapper {
+        top: 8%; /* Ajusta la posición del contenedor hacia abajo */
+    }
+    .background-image {
+        background-size: 90%; /* Aumenta el tamaño de la imagen en móviles pequeños */
+    }
+}
+
+/* Media query para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+    .background-wrapper {
+        top: 8%; /* Ajusta la posición del contenedor hacia abajo */
+    }
+    .background-image {
+        background-size: 90%; /* Aumenta el tamaño de la imagen en móviles pequeños */
+    }
+}
+
+/* Media query para computadoras portátiles y de escritorio */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos específicos para portátiles y escritorio */
+    
+    .background-wrapper {
+        top: 8%; /* Ajusta la posición del contenedor hacia abajo */
+    }
+    .background-image {
+        background-size: 38%; /* Aumenta el tamaño de la imagen en móviles pequeños */
+    }
+}
+
+/* Media query para pantallas grandes de escritorio */
+@media only screen and (min-width: 1441px) {
+    /* Estilos específicos para pantallas grandes de escritorio */
+    
+    .background-wrapper {
+        top: 8%; /* Ajusta la posición del contenedor hacia abajo */
+    }
+    .background-image {
+        background-size: 52%; /* Aumenta el tamaño de la imagen en móviles pequeños */
+    }
+}
+
+/* Media query para pantallas ultragrandes o de desarrollo (opcional) */
+@media only screen and (min-width: 1920px) {
+    /* Estilos específicos para pantallas ultragrandes o de desarrollo */
+    /* Ejemplo: aumentar aún más el tamaño del contenido */
+    .background-wrapper {
+        top: 8%; /* Ajusta la posición del contenedor hacia abajo */
+    }
+    .background-image {
+        background-size: 52%; /* Aumenta el tamaño de la imagen en móviles pequeños */
+    }
+}
+
+

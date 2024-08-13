@@ -1,0 +1,57 @@
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply animation to the welcome message */
+.welcome-message {
+    position: fixed; /* Relative para posicionarlo respecto a su contenedor */
+    margin-top: 0; /* Ajusta esto según la altura del navbar */
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--primary-color);
+    padding-top: 1.3rem;
+
+    text-align: center;
+    box-sizing: border-box;
+    animation: fadeIn 2s ease-in-out; /* Animación añadida */
+}
+
+/* Estilos generales para todos los dispositivos */
+
+/* Media query para móviles pequeños */
+@media only screen and (max-width: 480px) {
+    /* Estilos específicos para móviles pequeños */
+    .welcome-message {
+        padding-top: 1rem;
+    }
+}
+
+/* Media query para móviles grandes */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para móviles grandes */
+}
+
+/* Media query para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+}
+
+/* Media query para computadoras portátiles y de escritorio */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos específicos para portátiles y escritorio */
+}
+
+/* Media query para pantallas grandes de escritorio */
+@media only screen and (min-width: 1441px) {
+    /* Estilos específicos para pantallas grandes de escritorio */
+    /* Aquí puedes aumentar el tamaño de las fuentes, espaciado, etc. */
+}
+
+/* Media query para pantallas ultragrandes o de desarrollo (opcional) */
+@media only screen and (min-width: 1920px) {
+    /* Estilos específicos para pantallas ultragrandes o de desarrollo */
+    /* Ejemplo: aumentar aún más el tamaño del contenido */
+}
+
+

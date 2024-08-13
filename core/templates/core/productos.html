@@ -1,0 +1,26 @@
+{% extends 'core/base_menu.html' %}
+
+{% block content %}
+<div class="container">
+    {% if selected_category %}
+        <h1 class="text-center mt-4">{{ selected_category.name }}</h1>
+    {% else %}
+        <h1 class="text-center mt-4">Menú</h1>
+    {% endif %}
+    <p class="text-center">Explora nuestra variedad de productos.</p>
+
+    <div class="products-list">
+        {% for product in products %}
+            <div class="product-item">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-image">
+                <div class="product-details">
+                    <h5 class="product-title">{{ product.name }}</h5>
+                    <p class="product-price">${{ product.price }}</p>
+                </div>
+            </div>
+        {% empty %}
+            <p class="text-center">No hay productos disponibles en esta categoría.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

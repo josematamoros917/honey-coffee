@@ -1,0 +1,92 @@
+/* Importa los colores definidos en colors.css */
+@import url('colors.css');
+body {
+    padding: 0 !important;
+}
+/* Contenedor general */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Lista de productos */
+.products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los productos */
+}
+
+/* Elemento del producto */
+.product-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+}
+
+/* Imagen del producto */
+.product-image {
+    width: 80px; /* Ancho de la imagen */
+    height: 80px; /* Altura de la imagen */
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+/* Detalles del producto */
+.product-details {
+    flex: 1;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.product-price {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+}
+
+/* Mensaje cuando no hay productos */
+.text-center {
+    text-align: center;
+}
+
+/* Estilos generales para todos los dispositivos */
+
+/* Media query para móviles pequeños */
+@media only screen and (max-width: 480px) {
+    /* Estilos específicos para móviles pequeños */
+}
+
+/* Media query para móviles grandes */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para móviles grandes */
+}
+
+/* Media query para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+}
+
+/* Media query para computadoras portátiles y de escritorio */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos específicos para portátiles y escritorio */
+}
+
+/* Media query para pantallas grandes de escritorio */
+@media only screen and (min-width: 1441px) {
+    /* Estilos específicos para pantallas grandes de escritorio */
+    /* Aquí puedes aumentar el tamaño de las fuentes, espaciado, etc. */
+}
+
+/* Media query para pantallas ultragrandes o de desarrollo (opcional) */
+@media only screen and (min-width: 1920px) {
+    /* Estilos específicos para pantallas ultragrandes o de desarrollo */
+    /* Ejemplo: aumentar aún más el tamaño del contenido */
+}
+

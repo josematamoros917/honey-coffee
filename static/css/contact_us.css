@@ -1,0 +1,59 @@
+/* Estilos generales para todos los dispositivos */
+
+/* Media query para móviles pequeños */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 20px 8px 8px 0;
+    }
+
+    /* Ajusta el tamaño y alineación de los botones */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn {
+        width: 80%; /* Ajusta el ancho de los botones */
+        margin-bottom: 10px; /* Espacio entre los botones */
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+
+    /* Asegúrate de que los botones estén perfectamente centrados */
+    .btn-primary,
+    .btn-secondary {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+
+
+/* Media query para móviles grandes */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Estilos específicos para móviles grandes */
+}
+
+/* Media query para tabletas */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+}
+
+/* Media query para computadoras portátiles y de escritorio */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos específicos para portátiles y escritorio */
+}
+
+/* Media query para pantallas grandes de escritorio */
+@media only screen and (min-width: 1441px) {
+    /* Estilos específicos para pantallas grandes de escritorio */
+    /* Aquí puedes aumentar el tamaño de las fuentes, espaciado, etc. */
+}
+
+/* Media query para pantallas ultragrandes o de desarrollo (opcional) */
+@media only screen and (min-width: 1920px) {
+    /* Estilos específicos para pantallas ultragrandes o de desarrollo */
+    /* Ejemplo: aumentar aún más el tamaño del contenido */
+}
